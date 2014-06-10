@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewServerPhotosActivity" >
+    
+    <android.support.v4.view.ViewPager 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/selectedViewPagerr"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">		
+	</android.support.v4.view.ViewPager>
+    
+	<GridView 
+	    android:id="@+id/baseFragGridView"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:numColumns="auto_fit"
+		android:verticalSpacing="12dp"
+		android:horizontalSpacing="12dp"
+		android:columnWidth="80dp"
+		android:stretchMode="columnWidth"
+		android:gravity="center"
+		android:focusable="false"
+		android:background="@android:color/black"
+		android:focusableInTouchMode="false" >
+	    
+	
+	</GridView>
+	<ProgressBar
+	    android:id="@+id/BaseFragGridViewProgressBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"/>
+	
+	<TextView
+	    android:id="@+id/BaseFragGridViewProgressBarDescript"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/BaseFragGridViewProgressBar"
+	    android:textColor="@android:color/white"
+	    android:text="connecting to server..."/>
+</RelativeLayout>

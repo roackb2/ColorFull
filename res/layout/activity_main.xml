@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f2fc"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <TextView
+		android:id="@+id/accountMessage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    android:text="Please log in"/>"
+    
+
+	<RelativeLayout
+	    android:layout_width="250dp"
+	    android:layout_height="350dp"
+	    android:layout_centerInParent="true">
+	    "
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginBottom="20dp">
+	        
+		     <ImageButton
+		        android:id="@+id/useCamera"
+		        android:layout_width="100dp"
+		        android:layout_height="60dp"
+		        android:layout_marginBottom="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/usecamera"/>
+		    
+		     <TextView
+		        android:id="@+id/useCameraDescript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/use_camera"
+		        android:layout_below="@id/useCamera"
+		        android:layout_centerHorizontal="true"/>
+	    </RelativeLayout>"
+
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginBottom="20dp">
+		     
+			 <ImageButton
+		        android:id="@+id/viewPhoto"
+		        android:layout_width="100dp"
+		        android:layout_height="60dp"
+		        android:layout_marginBottom="5dp"
+		        android:src="@drawable/viewphoto"
+				android:layout_centerHorizontal="true"/>
+
+		    
+		    <TextView
+		        android:id="@+id/viewPhotoDescript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/view_photo"
+		        android:layout_below="@id/viewPhoto"
+		        android:layout_centerHorizontal="true"/>
+		    
+		</RelativeLayout>"
+	    
+		
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginBottom="20dp">
+		    
+			<ImageButton
+		        android:id="@+id/cloudPhotos"
+		        android:layout_width="100dp"
+		        android:layout_height="60dp"
+		        android:layout_marginBottom="5dp"
+		        android:src="@drawable/cloudphotos"
+		        android:layout_centerHorizontal="true"/>
+		    
+		    <TextView
+		        android:id="@+id/cloudPhotosDescript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/cloud_photos"
+		        android:layout_below="@id/cloudPhotos"
+		        android:layout_centerHorizontal="true"/>"
+		</RelativeLayout>"
+	    
+  		<RelativeLayout
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_alignParentRight="true"
+  		    android:layout_centerVertical="true"
+  		    android:layout_marginBottom="20dp">
+
+		    <ImageButton
+		        android:id="@+id/onlineGallery"
+		        android:layout_width="100dp"
+		        android:layout_height="60dp"
+		        android:layout_marginBottom="5dp"
+		        android:src="@drawable/onlinegallery"   
+		        android:layout_centerHorizontal="true"/>
+
+		    <TextView
+		        android:id="@+id/onlineGalleryDescript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/online_gallery"
+		        android:layout_below="@id/onlineGallery"
+		        android:layout_centerHorizontal="true"/>"
+		        
+  		</RelativeLayout>
+  		    "
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true">
+	        
+		    <ImageButton
+		        android:id="@+id/register"
+		        android:layout_width="100dp"
+		        android:layout_height="60dp"
+		        android:layout_marginBottom="5dp"
+		        android:src="@drawable/register"
+		        android:layout_centerHorizontal="true"/>"
+		    
+		    <TextView
+		        android:id="@+id/registerDescript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/register_and_log_in"
+		        android:layout_below="@id/register"
+		        android:layout_centerHorizontal="true"/>        
+	        
+	    </RelativeLayout>
+	      
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true">
+		    
+		    <ImageButton
+		        android:id="@+id/logOut"
+		        android:layout_width="100dp"
+		        android:layout_height="60dp"
+		        android:layout_marginBottom="5dp"
+		        android:src="@drawable/logout"
+		        android:layout_centerHorizontal="true"/>
+		    
+		    <TextView
+		        android:id="@+id/logoutDescript"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/logOut"
+		        android:text="@string/logout"
+		        android:layout_centerHorizontal="true"/>"
+	        
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>
